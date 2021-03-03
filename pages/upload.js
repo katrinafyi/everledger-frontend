@@ -2,10 +2,6 @@ import useFetch from "use-http";
 
 import { useCallback, useEffect, createRef } from "react";
 
-const UPLOAD_OPTIONS = {
-  expires: "1h"
-};
-
 function createUploadData(file) {
   const data = new FormData();
   data.append("file", file);

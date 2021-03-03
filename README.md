@@ -1,21 +1,13 @@
-# Hello World example
+# Everledger Frontend Test
 
-This example shows the most basic idea behind Next. We have 2 pages: `pages/index.js` and `pages/about.js`. The former responds to `/` requests and the latter to `/about`. Using `next/link` you can add hyperlinks between them with universal routing capabilities. The `day` directory shows that you can have subdirectories.
+A new client of Everledger wants to start providing diamond data to the Everledger Platform. They have a set of images of diamonds they wish to upload.
 
-## Deploy your own
+## Instructions
 
-Deploy the example using [Vercel](https://vercel.com):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/next.js/tree/canary/examples/hello-world)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example hello-world hello-world-app
-# or
-yarn create next-app --example hello-world hello-world-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+- Create a NextJS application. In the Home page, add a welcome message and a link to the /upload page.
+- The upload page should have a button that says "upload".
+- Use the everledger logo (download) as a design element on the upload page.
+- The file picker should open up when the button is clicked and accept only images as file input.
+- Upload the image of a diamond (sample) to https://anonymousfiles.io/ which should be available and accessible for 1 hour max.
+- Copy the link to clipboard once the file is uploaded.
+- Show a loading indicator on the file upload page and display a success message on file upload.

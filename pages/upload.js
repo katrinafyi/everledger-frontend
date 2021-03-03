@@ -15,7 +15,6 @@ function createUploadData(file) {
 
 export default function UploadPage() {
   const fileRef = createRef();
-  const urlRef = createRef();
 
   const {
     post,
@@ -63,13 +62,7 @@ export default function UploadPage() {
           <>
             <p>Image successfully uploaded!</p>
             <label htmlFor="url">Image URL</label>
-            <input
-              id="url"
-              ref={urlRef}
-              type="text"
-              readOnly
-              value={data.url}
-            ></input>
+            <input id="url" type="text" readOnly value={data.url}></input>
             <p>URL has also been copied to the clipboard!</p>
           </>
         )}
